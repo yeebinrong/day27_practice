@@ -26,6 +26,7 @@ export class MainComponent implements OnInit {
       q1: this.fb.control('1', [Validators.required]),
       q2: this.fb.control('2', [Validators.required]),
       temperature: this.fb.control('3', [Validators.required]),
+      image_file: this.fb.control('', [Validators.required])
     })
   }
 }

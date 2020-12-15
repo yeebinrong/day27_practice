@@ -10,7 +10,9 @@ export class ApiService {
 
   async postAPIform (data) {
     let formData = new FormData()
-    formData.append("data", JSON.stringify(data))
+    formData.append("data", data)
+    // NOT WORKING DO NOT REFERENCE GO REFER TO DIGITALOCEAN CODE
+    formData.append('image_file', (<HTMLInputElement>document.getElementById("image_file")).files[0])
     await this.http.post('http://localhost:3000/temperature', formData).toPromise()
   }
 }
