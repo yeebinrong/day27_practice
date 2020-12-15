@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input formControlName="userName" placeholder="Name" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="q1" placeholder="q1" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="q2" placeholder="q2" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="temperature" placeholder="temperature" matInput>
+    </mat-form-field>
+    <button type="submit">Submit</button>
+</form>
